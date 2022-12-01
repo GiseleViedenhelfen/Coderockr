@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import Cards from '../../components/Cards/Cards';
 import Header from '../../components/Header/Header';
 import GlobalContext from '../../context/context';
-import requestApi from '../../helpers/api';
+import { requestApi } from '../../helpers/api';
 
 function Home() {
   const { setDataAPI } = useContext(GlobalContext);
@@ -17,7 +17,6 @@ function Home() {
     <div>
       <Header />
       <Cards />
-      <p>Homepage</p>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import GlobalContext from './context';
 
 export default function GlobalProvider({ children }) {
   const [dataAPI, setDataAPI] = useState([]);
+
   const context = useMemo(() => ({
     dataAPI,
     setDataAPI,
