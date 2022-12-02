@@ -3,6 +3,7 @@ import Cards from '../../components/Cards/Cards';
 import Header from '../../components/Header/Header';
 import GlobalContext from '../../context/context';
 import { requestApi } from '../../helpers/api';
+import './Style.css';
 
 function Home() {
   const { setDataAPI } = useContext(GlobalContext);
@@ -16,7 +17,9 @@ function Home() {
   return (
     <div>
       <Header />
-      <Cards />
+      <div className="all-cards-container">
+        <Cards />
+      </div>
     </div>
   );
 }

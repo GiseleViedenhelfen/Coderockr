@@ -6,10 +6,11 @@ import GlobalProvider from './context/Provider';
 import Home from './pages/Home/Home';
 import NotFound from './pages/NotFound/NotFound';
 import PostDetails from './pages/PostDetails/Post';
+import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="app-container">
       <GlobalProvider>
         <BrowserRouter>
           <Routes>

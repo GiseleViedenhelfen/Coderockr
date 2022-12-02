@@ -1,0 +1,83 @@
+.card-link {
+  text-decoration : none;
+  width: 42rem;
+  max-width: 70rem;
+  height: 20rem;
+  color: black;
+  font-family: 'Rubik';
+}
+.card-content {
+  height: 20rem;
+  background-color:  #FFFFFF;
+  display: flex;
+  /* flex-direction: row-reverse; */
+}
+.card-container {
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+.card-text-content {
+  padding: 2px;
+  margin: 5px 30px;
+}
+.card-link:nth-child(6n+4) .card-content{
+  flex-direction: row-reverse;
+}
+.card-link:nth-child(6n+5) .card-content{
+  flex-direction: row-reverse;
+}
+.card-link:nth-child(3n+3){
+  display: flex;
+  align-items: stretch;
+  margin-left: 30%;
+  margin-right: 0;
+  height: 25rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  width: 60rem;
+}
+.card-link:nth-child(3n+3) .card-text-content {
+  width: 23rem;
+}
+.card-link:nth-child(3n+3) .card-content {
+  height: 25rem;
+  flex-direction: row;
+}
+.card-link:nth-child(6n+6){
+  margin-left: 0;
+  margin-right: 10rem;
+}
+.card-p-content {
+  max-height: 90px;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  Line-height:30px;
+  font-weight: 400;
+  font-size: 20px;
+  height: 97px;
+}
+.card-author-name {
+  height: 35px;
+  margin-bottom: 0;
+  Line-height:30px;
+  font-weight: 400;
+  font-size: 20px;
+
+}
+.card-content img {
+  width: 30%;
+  padding: 0;
+ }
+ .card-link:nth-child(3n+3) .card-content img{
+  width:  50%;
+}
+.card-link:nth-child(6n+6) .card-content{
+  width: 90%;
+}
+ .card-title {
+  color: #F1A10A;
+  Line-height:42.66px;
+  margin: 0;
+} 
