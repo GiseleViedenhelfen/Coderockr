@@ -10,7 +10,6 @@
   height: 20rem;
   background-color:  #FFFFFF;
   display: flex;
-  /* flex-direction: row-reverse; */
 }
 .card-container {
   display: flex;

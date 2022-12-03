@@ -2,17 +2,13 @@
   display:flex;
   justify-content:center;
   background: linear-gradient(90deg, #F1A10A 0%, #342303 100%);
-  width: 100vw;
-  height: 100vh;
-  overflow-y: auto;
 }
 .post-container {
   display: flex;
   flex-direction: column;
   background-color: #FFFFFF;
   width: 70%;
-  height: fit-content;
-  margin-top: 3rem;
+  height: 60%;
   margin-bottom: 5rem;
 }
 .post-content-container {
@@ -29,7 +25,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border: 1px solid black; */
   margin: 2rem 5rem;
 }
 .post-container h2 {
