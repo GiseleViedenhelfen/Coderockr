@@ -24,13 +24,14 @@ function Header() {
   };
   return (
     <section className="header-container" id="header-container">
-      <button
-        type="button"
-        onClick={clickHome}
-        className="button-homepage"
-      >
-        <h2>Rockr Blog</h2>
-      </button>
+      <section className="button-homepage">
+        <button
+          type="button"
+          onClick={clickHome}
+        >
+          Rockr Blog
+        </button>
+      </section>
 
       <section className="header-subcontainer">
         <button

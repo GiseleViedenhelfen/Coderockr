@@ -1,82 +1,127 @@
-.card-link {
-  text-decoration : none;
-  width: 42rem;
-  max-width: 70rem;
-  height: 20rem;
-  color: black;
+a {
+  text-decoration: none;
+  margin: 0;
+}
+a:nth-child(3n+3) .text-content{
+  justify-content: center;
+  gap: 2rem;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #FFFFFF;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text-content p {
+  text-align: start;
   font-family: 'Rubik';
+  color: #2D2D2D;
+  width: 80%;
+  margin: 0;
 }
-.card-content {
-  height: 20rem;
-  background-color:  #FFFFFF;
+
+.container-p-arrow {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
-.card-container {
-  display: flex;
-  height: fit-content;
-  flex-wrap: wrap;
+
+.text-content h2 {
+  text-align: start;
+  font-family: 'Rubik';
+  width: 80%;
+  margin: 0;
+  color: #F1A10A;
 }
-.card-text-content {
-  padding: 2px;
-  margin: 5px 30px;
-}
-.card-link:nth-child(6n+4) .card-content{
-  flex-direction: row-reverse;
-}
-.card-link:nth-child(6n+5) .card-content{
-  flex-direction: row-reverse;
-}
-.card-link:nth-child(3n+3){
-  display: flex;
-  align-items: stretch;
-  margin-left: 30%;
-  margin-right: 0;
-  height: 25rem;
-  margin-top: 5rem;
+
+.bloco-um, .bloco-dois, .bloco-tres, .bloco-quatro {
   margin-bottom: 5rem;
-  width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 30vh 60vh 30vh 60vh;
+  grid-row-gap: 5rem;
+  grid-template-areas: 
+  "a b b c d d"
+  ". . e e f f"
+  "h h g j j i "
+  "k k l l . ."
+  ;
+
 }
-.card-link:nth-child(3n+3) .card-text-content {
-  width: 23rem;
+
+.frag0 {
+  margin: 0;
+  grid-area: a;
 }
-.card-link:nth-child(3n+3) .card-content {
-  height: 25rem;
-  flex-direction: row;
+.frag1  {
+  /* align-self: flex-start; */
+  display: flex;
+  margin: 0;
+  grid-area: b;
+
 }
-.card-link:nth-child(6n+6){
-  margin-left: 0;
-  margin-right: 10rem;
+.frag2 {
+  margin: 0;
+  grid-area: c;
+}
+.frag3  {
+  display: flex;
+  margin: 0;
+  grid-area: d;
+}
+.frag4  {
+  margin: 0;
+  grid-area: e;
+}
+.frag5  {
+  display: flex;
+  margin: 0;
+  grid-area: f;
+}
+.frag6  {
+  margin: 0;
+  grid-area: g;
+}
+.frag7  {
+  display: flex;
+  margin: 0;
+  grid-area: h;
+}
+.frag8  {
+  margin: 0;
+  grid-area: i;
+}
+.frag9  {
+  display: flex;
+  margin: 0;
+  grid-area: j;
+}
+.frag10  {
+  margin: 0;
+  grid-area: k;
+}
+.frag11 {
+  display: flex;
+  margin: 0;
+  grid-area: l;
 }
 .card-p-content {
-  max-height: 90px;
   -webkit-line-clamp: 3; 
   -webkit-box-orient: vertical;
   overflow: hidden;
   Line-height:30px;
   font-weight: 400;
   font-size: 20px;
-  height: 97px;
+  height: 90px;
 }
-.card-author-name {
-  height: 35px;
-  margin-bottom: 0;
-  Line-height:30px;
-  font-weight: 400;
-  font-size: 20px;
+@media(max-width:769px) {
+.text-content > p{
+  display: none;
+}
+.container-p-arrow {
+  display: none;
+}
 
 }
-.card-content img {
-  width: 30%;
-  padding: 0;
- }
- .card-link:nth-child(3n+3) .card-content img{
-  width:  50%;
-}
-.card-link:nth-child(6n+6) .card-content{
-  width: 90%;
-}
- .card-title {
-  color: #F1A10A;
-  Line-height:42.66px;
-  margin: 0;
-} 
