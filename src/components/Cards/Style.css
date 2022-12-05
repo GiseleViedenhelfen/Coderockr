@@ -56,7 +56,6 @@ a:nth-child(3n+3) .text-content{
   grid-area: a;
 }
 .frag1  {
-  /* align-self: flex-start; */
   display: flex;
   margin: 0;
   grid-area: b;
@@ -116,7 +115,7 @@ a:nth-child(3n+3) .text-content{
   font-size: 20px;
   height: 90px;
 }
-@media(max-width:769px) {
+@media(max-width:800px) {
 .text-content > p{
   display: none;
 }

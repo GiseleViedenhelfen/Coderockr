@@ -43,6 +43,7 @@
   color:  #FFFFFF;
   border: none;
   padding: 0;
+  margin-top: 1rem;
   cursor: pointer;
   font-family: 'Rubik';
   font-weight: 700;
@@ -56,11 +57,9 @@
    
   }
   .header-subcontainer {
-    /* border: 1px solid white; */
     width: 60%;
   }
   .button-homepage button {
-    /* border: 1px solid white; */
     margin-top: 2rem;
     font-size: 32px;
     line-height: 0;
@@ -70,7 +69,6 @@
 @media(max-width: 480px) {
   .header-container {
     padding: 0 !important;
-    /* border: 1px solid wheat; */
     justify-content:space-evenly;
     height: 25%;
     align-items:center;
@@ -78,9 +76,6 @@
   }
   .sticky {
     align-items:center;
-    /* height: 25%; */
-    /* padding: 2rem; */
-    /* gap:2rem; */
     flex-direction: column;
   } 
   .header-subcontainer {
