@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Coderockr frontend-test
+Projeto criado para vaga de frontend em níveis iniciais de carreira.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Objetivo
+Criar uma aplicação que consome uma api, faça a renderização de cards seguindo o layout proposto e, ao clicar em algum card, ser feito o redirecionamento para a página de detalhes do item escolhido.
+A página principal, em que são exibidos os cards, deve ter scroll infinito. Esse estilo se caracteriza pelo carregamento de itens conforme o usuário scrolla a página.
+Além da página inicial e de detalhes existem mais dois componentes, header e formulário de contato.
+O header deve ter pelo menos três componentes, o primeiro com o nome da aplicação,o segundo 'posts' e o terceiro, 'contact'. Os primeiro e segundo itens não ficou especificado o que deferia fazer, mas o terceiro deve abrir um modal com formulário onde o usuário pode entrar em contato.
+É solicitado que a aplicação tenha responsividade.
+# Tecnologias usadas
+O projeto foi desenvolvido basicamente utilizando a biblioteca React. Por meio dela, foi feita a construção do HTML e junção desse com a lógica javascript.
 
-## Available Scripts
+Bibliotecas adicionais foram utilizadas para renderização de páginas e criação do modal.
+Para a renderização de páginas foi utilizada a biblioteca React Router DOM, para o modal foi utilizada a Reactjs-popup.
+Ambas tem utilização intuitiva e documentação consistente, podem ser acessadas pelos links:
+https://www.npmjs.com/package/react-router-dom e https://www.npmjs.com/package/reactjs-popup respectivamente.
 
-In the project directory, you can run:
+Para a estilização foi utilizado CSS vanilla com colaboração da biblioteca Reactjs-popup para o melhor design dele.
+Para observar os eventos de scroll foi feita manipulação do DOM.
+Para ajudar a manter o código padronizado, foi utilizado Eslint(AirBnB).
 
-### `npm start`
+# Desenvolvimento
+O projeto foi desenvolvido em fases: 
+1. aproximação inicial, com a criação de esqueletos para as páginas e componentes.
+2. lógica para renderização dos cards com retorno fixo, desenvolvimento do restante das funcionalidades (funcionalidades para cada item do header, redirecionamento para a página de detalhes pelo clique e setup inicial do modal para formulário);
+3. esboço da estilização para todos os componentes e páginas;
+4. refatoração da lógica de renderização para retorno indefinido da api;
+5. estilização final utilizando display grid para cards e adicionando responsividade;
+6. adicionar verificações para o formulário dando retorno para o usuário se seria possível ou não submeter para envio. 
+7. ajustes finais no header, para que respondesse melhor no scroll e diferentes telas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Instalação e utilização
+é necessário ter instalado no computador Node (recomendado v16.14.0 lts/gallium)
+No ícone "Code", faça o download do projeto via git clone ou download pela opção zip; 
+abra o terminal e entre na pasta do projeto;
+no terminal, rode os seguintes comandos:
+1. git checkout development
+2. npm install
+3. npm start
