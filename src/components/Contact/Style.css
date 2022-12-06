@@ -1,15 +1,14 @@
+
 textarea {
   resize: none;
 }
 .popup-container {
-  border: 1px solid black;
+  
   display: flex;
   flex-direction: column;
-  width: 25rem;
-  height: 30rem;
   background-color: #FFFFFF;
-  /* font-size: 32px; */
   align-items: center;
+  padding: 2rem 5rem;
 }
 
 .popup-container > h2 {
@@ -18,20 +17,31 @@ textarea {
 .form-container {
   display: flex;
   flex-direction: column;
-  /* font-size: 32px; */
   gap: 1rem;
   color: #000000;
 }
 .label-input {
   display: flex;
-  /* font-size: 32px; */
   flex-direction: column;
   gap: 0.5rem;
 }
 .button-submit {
+  padding: 5%;
+  display: flex;
+  border-radius: 4px;
+  align-content: center;
+  justify-content: space-evenly;
   background-color: #2D2D2D;
   cursor: pointer;
   color:  #FFFFFF;
+}
+
+.button-submit img {
+  width: 8%;
+  align-self: center;
+}
+.button-submit h3 {
+  margin: 0;
 }
 .input {
   border: 1px solid #2D2D2D;
@@ -39,4 +49,18 @@ textarea {
   background: #FFFFFF;
   box-sizing: border-box;
   padding: 0.5rem;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.close-popup-icon {
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
 }

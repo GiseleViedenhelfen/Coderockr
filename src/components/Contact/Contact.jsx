@@ -1,13 +1,36 @@
 import React, { useState } from 'react';
 import './Style.css';
 import contactIsDisable from '../../helpers/utils/Validations';
+import seta from '../../icons/buttonVector.png';
 
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  function onlynumber(evt) {
+    const theEvent = evt || window.event;
+    let key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode(key);
+    const regex = /^[0-9.]+$/;
+    if (!regex.test(key)) {
+      theEvent.returnValue = false;
+      if (theEvent.preventDefault) theEvent.preventDefault();
+    }
+  }
+  const feedbackToUser = () => {
+    const checkData = contactIsDisable(email, name);
+    let result;
+    if (checkData) {
+      result = 'dados invalidos';
+    } if (!checkData) {
+      result = 'post inserido!';
+    }
+    return global.window.alert(result);
+  };
+
   return (
     <div className="popup-container">
+
       <h2>Contact</h2>
       <form className="form-container">
         <label htmlFor="Name" className="label-input">
@@ -35,7 +58,8 @@ function ContactForm() {
         <label htmlFor="phone-number" className="label-input">
           Phone
           <input
-            type="tel"
+            type="text"
+            onKeyPress={onlynumber}
             value={phone}
             id="phone-number"
             placeholder="Fill your phone"
@@ -54,9 +78,10 @@ function ContactForm() {
         <button
           type="button"
           className="button-submit"
-          disabled={contactIsDisable(email, name)}
+          onClick={feedbackToUser}
         >
-          Submit
+          <img src={seta} alt="btn-arrow" />
+          <h3> Submit</h3>
         </button>
       </form>
     </div>

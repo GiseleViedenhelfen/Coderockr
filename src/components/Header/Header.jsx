@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Style.css';
 import Popup from 'reactjs-popup';
 import ContactForm from '../Contact/Contact';
+import closeIcon from '../../icons/closeIcon.png';
 
 function Header() {
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ function Header() {
     }
     return navigate('/');
   };
+
   return (
     <section className="header-container" id="header-container">
       <section className="button-homepage">
@@ -51,10 +53,22 @@ function Header() {
             </button>
           )}
           modal
+          position="center"
         >
-          <span>
-            <ContactForm />
-          </span>
+
+          { (close) => (
+            <span className="modal-novo">
+              <button onClick={close} type="button" className="close-popup-button">
+                <img
+                  src={closeIcon}
+                  alt="press to close popup"
+                  width="50%"
+                  className="close-popup-icon"
+                />
+              </button>
+              <ContactForm />
+            </span>
+          )}
         </Popup>
       </section>
     </section>

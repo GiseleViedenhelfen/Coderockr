@@ -1,8 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import GlobalContext from '../../context/context';
-// import './Style.css';
-import './teste.css';
+import './style.css';
 import seta from '../../icons/Vector.png';
 
 function Cards() {

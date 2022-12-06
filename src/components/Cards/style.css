@@ -130,7 +130,7 @@ a img {
 }
 .card-text-container img{
   align-self: flex-end;
-  padding: 1%;
+  padding-right: 5%;
   height: 5%;
   width: 2%;
 }
@@ -138,14 +138,21 @@ a img {
   justify-content: center;
   gap: 1rem;
 }
+.link3 .card-text-container img, .link6 .card-text-container img {
+  position: relative;
+  margin-top: 10%;
+  height: 2%;
+}
+@media(max-width:1000px) {
+  .card-text-container h2 {
+    font-size: 20px;
+  }
+}
 @media(max-width:800px) {
-
   .card-text-container > p{
     display: none;
   }
   .card-text-container img {
     display: none;
-  }
-
-  
+  } 
   }
