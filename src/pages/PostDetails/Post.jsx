@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { requestApiById } from '../../helpers/api';
 import Header from '../../components/Header/Header';
 import './Style.css';
-/* eslint-disable */
+
 function PostDetails() {
   const [infoPost, setInfoPost] = useState([]);
   const [dataFormatada, setDataFormatada] = useState([]);
@@ -19,9 +19,9 @@ function PostDetails() {
     '07': 'jul',
     '08': 'ago',
     '09': 'set',
-    '10': 'out',
-    '11': 'nov',
-    '12': 'dez',
+    10: 'out',
+    11: 'nov',
+    12: 'dez',
   };
   useEffect(() => {
     const API = async () => {
