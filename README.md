@@ -34,7 +34,7 @@ O projeto foi desenvolvido em fases:
 No ícone "Code", faça o download do projeto via git clone ou download pela opção zip; 
 abra o terminal e entre na pasta do projeto;
 no terminal, rode os seguintes comandos:
-git checkout development
-npm install
-npm start
+1. git checkout development
+2. npm install
+3. npm start
 
