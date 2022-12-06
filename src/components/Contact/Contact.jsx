@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './Style.css';
-import contactIsDisable from '../../helpers/utils/Validations';
 import seta from '../../icons/buttonVector.png';
 
 function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  const [post, setPost] = useState('');
   function onlynumber(evt) {
     const theEvent = evt || window.event;
     let key = theEvent.keyCode || theEvent.which;
@@ -18,12 +18,17 @@ function ContactForm() {
     }
   }
   const feedbackToUser = () => {
-    const checkData = contactIsDisable(email, name);
+    const emailRegex = /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,3})$/i;
+    const nameMinLength = name.length >= 12;
+    const phoneNumber = phone.length === 11;
+    const someMessage = post.length !== 0;
+    const testEmail = emailRegex.test(email);
+    const checkData = testEmail && someMessage && phoneNumber && nameMinLength;
     let result;
     if (checkData) {
-      result = 'dados invalidos';
+      result = 'Done!';
     } if (!checkData) {
-      result = 'post inserido!';
+      result = 'please check the information provided...';
     }
     return global.window.alert(result);
   };
@@ -73,6 +78,7 @@ function ContactForm() {
             id="post-content"
             placeholder="post..."
             className="input"
+            onChange={({ target }) => setPost(target.value)}
           />
         </label>
         <button
