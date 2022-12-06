@@ -27,6 +27,9 @@ function ContactForm() {
     let result;
     if (checkData) {
       result = 'Done!';
+      setName('');
+      setEmail('');
+      setPhone('');
     } if (!checkData) {
       result = 'please check the information provided...';
     }
