@@ -16,7 +16,7 @@ Ambas tem utilização intuitiva e documentação consistente, podem ser acessad
 https://www.npmjs.com/package/react-router-dom e https://www.npmjs.com/package/reactjs-popup respectivamente.
 
 Para a estilização foi utilizado CSS vanilla com colaboração da biblioteca Reactjs-popup para o melhor design dele.
-
+Para observar os eventos de scroll foi feita manipulação do DOM.
 Para ajudar a manter o código padronizado, foi utilizado Eslint(AirBnB).
 
 # Desenvolvimento
